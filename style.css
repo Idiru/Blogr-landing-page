@@ -286,7 +286,7 @@ button.secondary {
     padding-top: 150px;
     gap: 125px;
     background-color: #FF7B86;
-
+    overflow: hidden;
 
 }
 
@@ -296,6 +296,14 @@ position: relative;
 height: 45px;
 width: 100%;
 text-align: center;
+
+}
+
+
+.container-content {
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap-reverse;
 
 }
 
