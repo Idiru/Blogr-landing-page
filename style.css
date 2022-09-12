@@ -1,0 +1,429 @@
+
+/* || General styles */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+h1, h2, h3 {
+    font-family: 'Overpass SemiBold',  sans-serif;
+    color: #1F3E5A;
+
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 98.05px;
+    letter-spacing: -1.92px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 61.28px;
+    letter-spacing: -1.2px;
+
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-bottom: 16px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+
+}
+
+li {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Overpass Light', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #4C5862;
+    letter-spacing: 0.5px;
+    padding-bottom: 64px;
+}
+
+
+button, a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.38px;
+    letter-spacing: 0.5px;
+
+}
+
+
+button, button:focus, button:active {
+
+    width: 137px;
+    height: 48px;
+    border-radius: 28px;
+    border: 1px solid #FFFFFF ;
+    background-color: #FFFFFF;
+    outline: none;
+
+}
+
+
+
+button.primary {
+    color: #FF505C;
+    background-color: #FFFFFF;
+
+}
+
+button.primary:hover {
+    color: #FFFFFF;
+    background-color: #FF7B86;
+    border: none;
+}
+
+button.secondary {
+    background-color: transparent;
+    color: #FFFFFF;
+
+}
+
+button.secondary:hover {
+    color: #FF7B86;
+    background-color: #FFFFFF;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+
+
+/* || Navbar */
+
+.navbar {
+padding: 60px 170px;
+line-height: 18.38px;
+font-weight: 700;
+}
+
+.navbar ul li {
+margin: 0 0 0 32px;
+    
+}
+
+
+.navbar .nav-menu ul li img {
+    padding-left: 8px;
+    
+        
+    }
+
+.nav-secondary-menu ul li  {
+    display: inline-block;
+
+}   
+
+.nav-menu ul li {
+    display: inline-block;
+}
+
+#login {
+    opacity: 0.75;
+}
+
+nav .nav-menu .submenu {
+    position: relative;
+    float: right;
+    
+}
+
+nav .nav-menu .submenu ul {
+    padding: 0px;
+
+}
+
+nav .nav-menu .submenu ul li {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+
+.nav-menu .submenu {
+    display: none;
+    
+}
+
+
+.nav-menu li:hover > .submenu {
+    display: block;
+    position: absolute;
+    margin-top: 27px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+    border-radius: 5px;
+    font-weight: 400;
+    line-height: 33px;
+    width: 168px;
+    height: 147px;
+
+}
+
+
+nav .nav-menu li:hover > .submenu ul li {
+    color: #2D2E40;
+    margin-top: 10px;
+
+    
+
+}
+
+nav .nav-menu li:hover {
+    font-weight: 700;
+}
+
+
+
+.connect {
+    position: absolute;
+    padding-bottom: 100px;
+}
+
+.connect:hover {
+    text-decoration: underline;
+    
+}
+
+.connect:hover img {
+    transform: scaleY(-1);
+    transition: 0.5s;
+
+}
+
+
+.burger-menu {
+    display: none;
+}
+
+
+
+/* || Header */
+
+header {
+    background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+    border-radius: 0px 0px 0px 100px;
+    height: 600px;
+}
+
+.container-header {
+    background-image: url(images/bg-pattern-intro-desktop.svg);
+    background-size: 3000px 3000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 0px 0px 0px 100px;
+
+}
+
+
+
+/* || Header - content */
+
+.container-content-header {
+    text-align: center;
+}
+
+.header-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+p.header-paragraph {
+    margin-top: 0px;
+    color: #FFFFFF;
+
+}
+
+button.secondary {
+    margin-left: 15px;
+}
+
+
+/* || Section 1 */
+
+.container-section-1  {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-left: 165px;
+    padding-top: 150px;
+    gap: 125px;
+    background-color: #FF7B86;
+
+
+}
+
+
+.container-section-1 h2 {
+position: relative;
+height: 45px;
+width: 100%;
+text-align: center;
+
+}
+
+
+.container-section-1-column {
+    width: 50%;
+    background-color: aquamarine;
+}
+
+.image-section-1 {
+    width: 40%;
+    background-color: antiquewhite;
+    position: relative;
+
+}
+
+.image-section-1 img {
+    width: 880px;
+    height: 882px;
+    position: relative;
+    bottom: 12%;
+
+
+}
+
+
+.image-section-1-mobile {
+    visibility: hidden;
+}
+
+/* || Break point */
+
+@media screen and (max-width: 1125px) {
+
+    /* || Break point - Global */
+
+
+    /* || Break point - header */
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-secondary-menu  {
+        display: none;
+    
+    }   
+
+    .burger-menu {
+        display: block;
+    }
+
+    .container.navbar {  
+        padding: 55px 24px; /* a revoir j'ai pas utilise la mm class avant*/
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        }
+    
+
+    .logo {
+        width: 327px;
+        height: 32px;
+    }
+
+    .header-title h1 {
+        font-size: 36px;
+    }
+
+    .container-header {
+        background-image: url(images/bg-pattern-intro-mobile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 600px;
+        border-radius: 0px 0px 0px 100px;
+    
+    }
+
+
+    /* || Break point - section 1 */
+
+    .container-section-1 {
+        flex: auto;
+        height: 1086px;
+        padding: 0 24px 0 24px;
+        gap: 48px;
+        position: relative;
+        overflow: auto;
+    }
+
+    .container-section-1 h2 {
+        display: flex;
+        position: relative;
+        height: 45px;
+        
+        }
+
+    .image-section-1 {
+        flex-direction: column-reverse;
+        position: relative;
+        flex: auto;
+        height: 350px;
+        top: 25%;
+
+
+
+    }
+    
+    .image-section-1 img {
+        width: 326px;
+        height: 326px;
+        flex-direction: column-reverse;
+
+    
+    }
+
+    .image-section-1-desktop {
+        visibility: hidden;
+    }
+    
+    .image-section-1-mobile {
+        visibility: visible;
+        position: relative;
+        display: flex;
+        
+       
+    }
+       
+    
+
+
+}
