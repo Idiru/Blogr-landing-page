@@ -285,7 +285,6 @@ button.secondary {
     padding-left: 165px;
     padding-top: 150px;
     gap: 125px;
-    background-color: #FF7B86;
     overflow: hidden;
     height: 882px;
 
@@ -303,7 +302,6 @@ text-align: center;
 
 
 .container-content {
-    background-color: cadetblue;
     display: flex;
     flex-wrap: wrap-reverse;
 
@@ -312,12 +310,10 @@ text-align: center;
 
 .container-section-1-column {
     width: 50%;
-    background-color: aquamarine;
 }
 
 .image-section-1 {
     width: 40%;
-    background-color: antiquewhite;
     position: relative;
 
 }
@@ -388,9 +384,10 @@ text-align: center;
 
     .container-section-1 {
         flex: auto;
-        height: 1086px;
+        flex-flow: row wrap;
+        height: 1000px;
         padding: 0 24px 0 24px;
-        gap: 48px;
+        gap: 100px;
         position: relative;
         overflow: auto;
     }
@@ -402,13 +399,23 @@ text-align: center;
         
         }
 
-    .image-section-1 {
-        flex-direction: column-reverse;
-        position: relative;
-        flex: auto;
-        height: 350px;
-        top: 25%;
 
+    .container-content {
+        height: 1000px;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .container-section-1-column {
+        width: 100%;
+        position: relative;
+    }
+
+    .image-section-1 {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        top: 0%;
 
 
     }
@@ -416,19 +423,24 @@ text-align: center;
     .image-section-1 img {
         width: 326px;
         height: 326px;
-        flex-direction: column-reverse;
+        position: relative;
+        bottom: 0%;
 
     
     }
 
     .image-section-1-desktop {
-        visibility: hidden;
+        display: none;
     }
+
+
+
     
     .image-section-1-mobile {
         visibility: visible;
-        position: relative;
-        display: flex;
+        display: block;
+        text-align: center;
+
         
        
     }
