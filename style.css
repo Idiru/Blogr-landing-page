@@ -313,7 +313,7 @@ text-align: center;
 
 
 .container-section-1-column {
-    width: 50%;
+    width: 42%;
     padding-right: 125px;
     margin: 0;
 
@@ -366,7 +366,7 @@ text-align: center;
 
 /* || Break point */
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1414px) {
 
     /* || Break point - Global */
 
