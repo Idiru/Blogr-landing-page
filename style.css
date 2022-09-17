@@ -344,16 +344,16 @@ text-align: center;
 
 /* || Section 2 */
 
+/* || Section 2 - Global */
+
 .container-section-2 {
     display: flex;
-    flex-direction: row;
 }
 
 .container-section-2-background {
     display: flex;
     background: linear-gradient(135deg, #2D2E40 0%, #3F4164 100%);
     border-radius: 0px 100px;
-
 }
 
 .container-section-2-background-image {
@@ -361,7 +361,6 @@ text-align: center;
     background-repeat: no-repeat;
 
 }
-
 
 .container-section-2-text h2 {
     color: #FFFFFF;
@@ -371,13 +370,56 @@ text-align: center;
     color: #FFFFFF;
 }
 
+/* || Section 2 - Desktop */
+
+@media screen and (min-width: 1414px) {
+
+    .container-section-2 {
+        height: 400px;
+        flex-flow: row;
+    }
+
+     .container-section-2-background {
+        flex-flow: row;
+    }
+
+    .container-section-2-background-image {
+        display: flex;
+        flex-flow: row;
+        gap: 100px;
+        align-items: center;
+        background-position-y: -600px;
+        background-position-x: -100px;
+
+    }
+
+    .container-section-2-background img {
+        width: 472px;
+        height: 499px;
+        padding-left: 165px;
+
+    }
+
+    .container-section-2-text {
+        padding-right: 165px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+    }
+
+    .container-section-2-text h2 {
+            padding-bottom: 5px;
+
+        }
+}
 
 /* || Break point */
 
 @media screen and (max-width: 1414px) {
 
-    /* || Break point - Global */
     /* || Break point - header */
+
     .nav-menu {
         display: none;
     }
@@ -419,6 +461,7 @@ text-align: center;
 
 
     /* || Break point - section 1 */
+
     .container-section-1 {
         height: 1500px;
         padding: 0 24px 0 24px;
@@ -500,14 +543,9 @@ text-align: center;
 
     /* || Break point - Section 2 */
     .container-section-2 {
-        display: flex;
         text-align: center;
-        overflow: visible;
         height: 625px;
-
-
     }
-
 
      .container-section-2-background-image {
          background-position: center;
@@ -525,19 +563,20 @@ text-align: center;
         height: 347px;
         position: relative;
         bottom: 25%;
+        padding: 0 25px 0 25px;
     }
 
- .container-section-2-text {
-     padding-bottom: 110px;
-     position: relative;
-     bottom: 20%;
+     .container-section-2-text {
+         position: relative;
+         bottom: 20%;
+         padding: 0 25px 110px 25px;
 
- }
+     }
 
 
-    .container-section-2-text h2 {
-        padding-bottom: 10px;
+        .container-section-2-text h2 {
+            padding-bottom: 10px;
 
-    }
+        }
 
 }
