@@ -282,65 +282,112 @@ button.secondary {
 
 /* || Section 1 */
 
+/* || Section 1 - Global */
+
 .container-section-1  {
     display: flex;
-    flex: 1 100%;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-left: 165px;
-    padding-top: 150px;
-    gap: 125px;
-    overflow: hidden;
-    height: 882px;
-
-
 }
-
-
-.container-section-1 h2 {
-position: relative;
-height: 45px;
-width: 100%;
-text-align: center;
-
-}
-
 
 .container-content {
     display: flex;
-    flex-wrap: wrap-reverse;
-
 }
 
-
 .container-section-1-column {
-    width: 42%;
-    padding-right: 125px;
-    margin: 0;
-
+    display: flex;
 }
 
 .image-section-1 {
-    width: 40%;
-    position: relative;
-
-
+    display: flex;
 }
 
-.image-section-1 img {
-    width: 880px;
-    height: 882px;
-    position: relative;
-    bottom: 12%;
-
-
+#paragraph-section-1 {
+    padding-bottom: 0;
 }
 
 
-.image-section-1-mobile {
-    visibility: hidden;
+/* || Section 1 - Desktop */
+
+@media screen and (min-width: 1414px) {
+
+    .container-section-1  {
+        padding: 70px 0 0 165px;
+        flex-flow: row wrap;
+        overflow-x: hidden;
+        gap: 0;
+    }
+
+     .container-section-1 h2 {
+         width: 100%;
+         text-align: center;
+         padding-bottom: 90px;
+     }
+
+     .container-content {
+         flex-flow: row;
+
+     }
+
+     .container-section-1-column {
+         padding-right: 0;
+         flex-flow: column;
+         justify-content: center;
+     }
+
+
+     .image-section-1-desktop {
+         width: 880px;
+         height: 882px;
+         position: relative;
+         left: 18%;
+         bottom: 15%;
+
+     }
+
+    .image-section-1-mobile {
+        display: none;
+    }
 }
 
+/* || Section 1 - Mobile */
+
+@media screen and (max-width: 1414px) {
+
+    .container-section-1  {
+        padding: 100px 25px 270px 25px;
+        flex-flow: column;
+        gap: 38px;
+
+    }
+
+     .container-section-1 h2 {
+         text-align: center;
+     }
+
+     .container-content {
+         flex-flow: column;
+         align-items: center;
+         gap: 45px;
+
+     }
+
+     .container-section-1-column {
+         text-align: center;
+         flex-flow: column;
+
+     }
+
+
+     .image-section-1-desktop {
+        display: none;
+
+     }
+
+    .image-section-1-mobile {
+        width: 370px;
+        height: 326px;
+    }
+
+}
 
 /* || Section 2 */
 
@@ -375,6 +422,7 @@ text-align: center;
 @media screen and (min-width: 1414px) {
 
     .container-section-2 {
+        padding-top: 60px;
         height: 330px;
         flex-flow: row;
     }
@@ -477,8 +525,6 @@ text-align: center;
     flex-flow: column;
     flex-grow: 2;
 }
-
-
 
 /* || Section 3 - Desktop */
 
@@ -668,6 +714,9 @@ footer {
 }
 
 
+
+
+
 /* || Break point */
 
 @media screen and (max-width: 1414px) {
@@ -712,86 +761,4 @@ footer {
         border-radius: 0px 0px 0px 100px;
 
     }
-
-
-    /* || Break point - section 1 */
-
-    .container-section-1 {
-        height: 1500px;
-        padding: 0 24px 0 24px;
-        gap: 10px;
-        overflow: hidden;
-        align-content: flex-start;
-
-
-    }
-
-    .container-section-1 h2 {
-        height: 45px;
-        padding-top: 0;
-        padding-bottom: 40px;
-        margin-top: 100px;
-        margin-bottom: 40px;
-        display: block;
-        font-size: 26px;
-
-    }
-
-
-    .container-content {
-        height: 1000px;
-        flex-wrap: wrap-reverse;
-        align-content: center;
-        padding: 0 24px 0 24px;
-        justify-content: center;
-
-
-    }
-
-    .container-section-1-column {
-        width: 100%;
-        padding-top: 30px;
-        padding: 0 24px 0 24px;
-        text-align: center;
-
-    }
-
-    .container-section-1-column h3 {
-        padding-top: 0;
-        padding-bottom: 15px;
-        margin: 0;
-    }
-
-    .container-section-1-column p {
-        padding: 0 0 40px 0;
-    }
-
-    .image-section-1 {
-        width: 360px;
-        height: 326px;
-        padding-bottom: 40px;
-
-
-    }
-
-    .image-section-1 img {
-        width: 360px;
-        height: 326px;
-        bottom: 0%;
-
-    }
-
-
-    .image-section-1-desktop {
-        display: none;
-    }
-
-
-    .image-section-1-mobile {
-        visibility: visible;
-        display: block;
-        text-align: center;
-
-    }
-
 }
