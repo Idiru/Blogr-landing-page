@@ -10,6 +10,10 @@
         @import url(https://fonts.google.com/specimen/Overpass?preview.text_type=custom); /* Font Overpass */
         @import url(https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom); /* Font Ubuntu */
     </style>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
   <header>
@@ -40,10 +44,27 @@
                             <li><button class="primary">Sign Up</button></li>
                         </ul>
                     </div>
-                    <div class="burger-menu">
-                        <img src="images/icon-hamburger.svg" alt="burger-menu">
-                    </div>
+                    <div class="container-burger-menu">
+                        <img id="icons" class="burger-menu" src="images/icon-hamburger.svg" alt="burger-menu">
             </nav>
+            <div class="burger-menu-submenu">
+                        <ul class="burger-menu-submenu-main">
+                            <li>Product<img src="images/icon-arrow-dark.svg" alt="icon-arrow-dark"></li>
+                            <li>Company<img src="images/icon-arrow-dark.svg" alt="icon-arrow-dark"></li>
+                            <li>Connect<img src="images/icon-arrow-dark.svg" alt="icon-arrow-dark"></li>
+                            <div class="burger-menu-submenu-secondary">
+                                <ul>
+                                <li>Connect</li>
+                                <li>Newsletter</li>
+                                <li id="linkedin">LinkedIn</li>
+                                </ul>
+                            </div>
+                        </ul>
+                        <ul class="list-login">
+                          <li id="login">Login</li>
+                          <li><button>Sign Up</button></li>
+                        </ul>
+            </div>
             <div class="container-content-header">
                 <div class="header-text">
                     <div class="header-title">
@@ -140,7 +161,7 @@
     </div>
 
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
 
