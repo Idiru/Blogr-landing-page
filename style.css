@@ -289,8 +289,8 @@ align-items: center;
 
     .burger-menu-submenu {
         background-color: #FFFFFF;
-        width: 324px;
-        height: 300px;
+        width: 90%;
+        height: 45%;
         text-align: center;
         display: none;
         flex-flow: column;
@@ -305,7 +305,7 @@ align-items: center;
     }
 
       .submenu-secondary-on {
-        height: 511px;
+        height: 70%;
     }
 
 
@@ -736,7 +736,9 @@ header {
     .image-section-3 {
        width: 375px;
        height: 315px;
-        padding-top: 80px;
+       padding-top: 80px;
+       align-self: center;
+
     }
 
      .image-section-3-desktop {
@@ -853,3 +855,10 @@ footer {
     }
 
 }
+
+/* || Animations */
+
+    .fadeIn {
+        animation: fadeIn;
+        animation-duration: 2s;
+    }
