@@ -527,7 +527,7 @@ header {
 @media screen and (max-width: 1414px) {
 
     .container-section-1  {
-        padding: 100px 25px 270px 25px;
+        padding: 100px 0px 270px 0px;
         flex-flow: column;
         gap: 38px;
     }
@@ -544,6 +544,7 @@ header {
 
      .container-section-1-column {
          text-align: center;
+         padding: 0 33px;
          flex-flow: column;
      }
 
@@ -553,8 +554,9 @@ header {
      }
 
     .image-section-1-mobile {
-        width: 370px;
-        height: 326px;
+        width: 100%;
+        display: flex;
+        align-items: baseline;
     }
     
     @keyframes animation-section-1-monile {
@@ -652,11 +654,9 @@ header {
     }
 
     .container-section-2-background img {
-        width: 328px;
-        height: 347px;
+        width: 100%;
         position: relative;
         bottom: 25%;
-        padding: 0 25px 0 25px;
     }
 
      .container-section-2-text {
@@ -770,7 +770,6 @@ header {
      .image-section-3-mobile {
             width: 375px;
             height: 315px;
-            justify-content: center;
     }
 }
 
