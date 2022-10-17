@@ -83,8 +83,8 @@ button, a {
 
 button, button:focus, button:active {
 
-    width: 137px;
     height: 48px;
+    width: 150px;
     border-radius: 28px;
     border: 1px solid #FFFFFF ;
     background-color: #FFFFFF;
@@ -554,7 +554,7 @@ header {
      }
 
     .image-section-1-mobile {
-        width: 100%;
+        width: 390px;
         display: flex;
         align-items: baseline;
     }
@@ -656,7 +656,7 @@ header {
     }
 
     .container-section-2-background img {
-        width: 100%;
+        width: 380px;
         position: relative;
         bottom: 170px;
     }
@@ -754,12 +754,10 @@ header {
     }
 
      .container-section-3-text p {
-         padding: 0px;
+         padding: 0 24px;
     }
 
     .image-section-3 {
-       width: 375px;
-       height: 315px;
        padding-top: 80px;
        align-self: center;
 
@@ -770,8 +768,9 @@ header {
     }
 
      .image-section-3-mobile {
-            width: 375px;
-            height: 315px;
+            width: 100%;
+
+
     }
 }
 
@@ -781,6 +780,9 @@ header {
 
 footer {
     background-color: #24242C;
+    border-radius: 0px 100px 0px 0px;
+
+
 }
 
 .footer-container {
