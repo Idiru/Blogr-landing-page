@@ -652,12 +652,13 @@ header {
          background-size: 625px 604px;
          background-position-y: -230px;
          border-radius: 0px 100px;
+         height: 100%;
     }
 
     .container-section-2-background img {
         width: 100%;
         position: relative;
-        bottom: 170px;
+        bottom: 25%;
     }
 
      .container-section-2-text {
