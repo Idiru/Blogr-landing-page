@@ -639,9 +639,6 @@ header {
 
 /* || Section 2 - Mobile */
 
-.container-section-2-background img {
-        bottom: 25%;
-    }
 
 @media screen and (max-width: 1414px) {
 
@@ -660,7 +657,7 @@ header {
     .container-section-2-background img {
         width: 100%;
         position: relative;
-        bottom: 25%;
+        bottom: 170px;
     }
 
      .container-section-2-text {
